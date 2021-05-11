@@ -3,7 +3,7 @@
     margin: 10px;
 }
 
-.interaction > img:hover {
+.interaction > img {
     cursor: pointer;
 }
 
@@ -33,6 +33,7 @@
 body {
     margin: 0;
     background-color: whitesmoke;
+    height: 100vh;
 }
 
 .search_box {
@@ -68,6 +69,10 @@ header {
     align-items: flex-start;
     background-color: white;
     height: 65px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 .content {
@@ -265,16 +270,34 @@ header {
 
 section {
     display: flex;
-    justify-content: center;
+    
 }
 
 .main_story {
     width: 110px;
     height: 180px;
-    background-color: rgb(196, 196, 196);
+    background-image: url(./ASSETS/Myprofile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 5px;
     margin-top: 20px;
     border-radius: 12px;
+}
+
+.main_story:nth-of-type(2) {
+    background-image: url(./ASSETS/live_stream.png);
+}
+
+.main_story:nth-of-type(3) {
+    background-image: url(./ASSETS/profile.png);
+}
+
+.main_story:nth-of-type(4) {
+    background-image: url(./ASSETS/storm.jpg);
+}
+
+.main_story:nth-of-type(5) {
+    background-image: url(./ASSETS/Wallpaper.jpg);
 }
 
 .main_story > img {
@@ -292,17 +315,16 @@ section {
 
 .create_posting {
     display: flex;
+    justify-content: center;
     width: 592px;
-    height: 120px;
+    height: 80px;
     margin-top: 10px;
     background-color: white;
     border-radius: 12px;
     box-shadow: 0px 0px 2px gray;
-    margin-left: 473px;
 }
 
 .create_posting > img {
-    display: flex;
     border-radius: 50%;
     height: 40px;
     margin: 10px;
@@ -316,9 +338,164 @@ section {
     border-radius: 24px;
     margin-top: 10px;
     outline: none;
-    padding: .10em .10em;
+    padding: 20px 20px;
+    box-sizing: border-box;
 }
 
 .textbox:hover {
     background-color: rgb(221, 221, 221);
+}
+
+.posting {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.postingProfile > img {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 3px solid rgb(0, 110, 255);
+}
+
+.postingImg > img{
+    margin-top: 25px;
+    width: 592px;
+}
+
+.like {
+    display: flex;
+    align-items: center;  
+}
+
+.like > img {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.like > a {
+    color: rgb(133, 133, 133);
+    margin-right: 350px;
+}
+
+.like > a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.like > img:hover {
+    cursor: pointer;
+}
+
+.comments > a{
+    margin-left: 5px;
+    color: rgb(133, 133, 133);
+}
+
+.comments > a:hover {
+    text-decoration: underline;
+}
+
+.emotionImg > img{
+    width: 30px;
+    height: 30px;
+}
+
+.emotion {
+    display: flex;
+    justify-content: space-around;
+}
+
+.emotionImg {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+}
+
+.emotionImg > a {
+    margin-left: 5px;
+}
+
+.emotionImg:hover {
+    cursor: pointer;
+    background-color: rgb(219, 219, 219);
+    border-radius: 24px;
+}
+
+.emotionImg::after{
+    cursor: pointer;
+    background-color: rgb(190, 190, 190);
+    
+}
+
+.asideMenuName > img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 10px;
+} 
+
+.asideMenuName {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.asideMenu { 
+    height: 673px;
+    position: relative;
+    overflow-y: scroll;
+    width: 350px;
+}
+
+.asideMenu::-webkit-scrollbar {
+    width: 5px;
+}
+
+.asideMenu::-webkit-scrollbar-thumb {
+    background-color: rgb(170, 170, 170);
+    border-radius: 24px;
+}
+
+/*
+.asideMenu::-webkit-scrollbar-track {
+    background-color: gray;
+    border-radius: 24px;
+}
+*/
+
+.asideMenuName > span {
+    width: 200px;
+}
+
+.asideMenu > a {
+    color: rgb(197, 197, 197);
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.asideMenu > span {
+    color: rgb(78, 78, 78);
+    font-weight: 1000;
+    margin: 20px;
+    
+}
+
+nav {
+    position: fixed;
+}
+
+article {
+    margin-left: 460px;
 }
