@@ -78,7 +78,8 @@ header {
 .content {
     display: flex;
     justify-content: center;
-    width: 900px;
+    width: 800px;
+    margin-left: 50px;
 }
 
 .home:hover {
@@ -169,6 +170,7 @@ header {
 }
 
 .myprofile {
+    width: 100px;
     display: flex;
     align-items: center;
 }
@@ -276,7 +278,7 @@ section {
 .main_story {
     width: 110px;
     height: 180px;
-    background-image: url(./ASSETS/Myprofile.jpg);
+    background-image: url(./ASSETS/game.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 5px;
@@ -285,11 +287,11 @@ section {
 }
 
 .main_story:nth-of-type(2) {
-    background-image: url(./ASSETS/live_stream.png);
+    background-image: url(./ASSETS/bloodDonation.png);
 }
 
 .main_story:nth-of-type(3) {
-    background-image: url(./ASSETS/profile.png);
+    background-image: url(./ASSETS/emotionalHealth.png);
 }
 
 .main_story:nth-of-type(4) {
@@ -440,13 +442,14 @@ section {
     height: 36px;
     border-radius: 50%;
     margin-right: 10px;
+    margin-left: 10px;
 } 
 
 .asideMenuName {
     display: flex;
     align-items: center;
     margin-left: 10px;
-    margin-top: 20px;
+    height: 50px;
 }
 
 .asideMenu { 
@@ -454,6 +457,8 @@ section {
     position: relative;
     overflow-y: scroll;
     width: 350px;
+    margin-top: 10px;
+    margin-left: 0px;
 }
 
 .asideMenu::-webkit-scrollbar {
@@ -482,7 +487,7 @@ section {
 
 .main {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
 }
 
 .asideMenu > span {
@@ -499,3 +504,129 @@ nav {
 article {
     margin-left: 460px;
 }
+
+.asideMenuName:hover {
+    background-color: rgb(201, 201, 201);
+    height: 50px;
+    border-radius: 24px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.sidebarSponsored {
+    margin-left: 125px;
+}
+
+.sidebarSponsored > span {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    color: rgb(122, 122, 122);
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.sponsored > img {
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+}
+
+.sponsored {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sponsoredInformation {
+    margin-left: 10px;
+}
+
+.sponsoredLink {
+    color: rgb(197, 197, 197);
+    font-size: 12px;
+}
+
+.sponsoredName {
+    display: block;
+}
+
+.sidebarOption  {
+    margin-top: 30px;
+    color: rgb(170, 170, 170);
+}
+
+.sidebarOption > span {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.sidebarSponsored > a {
+    color: rgb(201, 201, 201);
+}
+
+.sidebarOption {
+    display: flex;
+}
+.sidebarOption > span {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 100px;
+}
+
+.sidebarOptionImg > img {
+    display: flex;
+    justify-content: flex-end;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebarOptionImg:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221, 221, 221);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+
+.sidebarOptionImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 17px;
+    height: 35px;
+    width: 35px;
+}
+
+.sidebarProfile > img {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    width: 30px;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: rgb(170, 170, 170);
+    border-radius: 24px;
+}
+
+.sidebar  {
+    height: 673px;
+    position: relative;
+    overflow-y: scroll;
+    margin-top: 10px;
+}
+
+/* aside {
+    display: flex;
+    justify-content: flex-end;
+} */
