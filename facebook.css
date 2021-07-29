@@ -194,6 +194,7 @@ header {
     width: 45px;
     border-radius: 50%;
     margin-left: 10px;
+    background-color: #ffffff;
 }
 
 .create > img {
